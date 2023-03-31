@@ -1,6 +1,6 @@
 body {
-  font-family: 'Raleway', Arial, sans-serif;  
-  color: #c7c6c6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #000000;
 }
 
 .holy-grail {
@@ -28,7 +28,7 @@ body {
   text-align: center;
   font-weight: 700;
   padding: 20px;
-  background-color: #f3f2f1;
+  background-color: #fafafa;
 }
 
 .holy-grail,
@@ -173,6 +173,8 @@ display: flex;
 
 
 /*sidebar 1 - slider*/
+
+
 .slider {
   width: 300px;
   margin: 20px auto;
@@ -185,16 +187,20 @@ display: flex;
   transition: all 300ms;
   
 }
+
+
 .item {
   flex-basis: 300px;
   height: 50px;
   vertical-align: top;
   font-size: 15px;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   background-color: #eeeeeeab;
+  border-radius: 5px;
 }
+
 
 
 .indicators {
@@ -282,7 +288,6 @@ display: flex;
 }
 .msg-info-name {
   margin-right: 10px;
-  font-weight: bold;
 }
 .msg-info-time {
   font-size: 0.85em;
@@ -321,9 +326,104 @@ display: flex;
   margin-left: 10px;
   background: rgb(208, 211, 209);
   color: rgb(175, 169, 169);
-  font-weight: bold;
   cursor: pointer;
 }
 .msger-send-btn:hover {
   background: rgb(237, 241, 238);
+}
+
+/*File Upload*/
+ 
+.file-uploader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #999;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.file-uploader p {
+  margin: 0;
+  padding: 0;
+}
+
+.file-uploader input {
+  display: none;
+}
+
+/*card*/
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -20em;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 5px;
+  width: 300px;
+  
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  border-radius: 1em;
+  border: 1px solid #eaeceb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+}
+  
+
+.card-text {
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-align: left;
+
+}
+
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+  margin-top: 2em;
+
+}
+
+.button-group__button {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 1em;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-group__button:hover {
+  background-color: #eaeceb;
+}
+
+.button-group__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.button-group__text {
+  flex-grow: 1;
+  text-align: left;
 }
