@@ -89,22 +89,7 @@ function MainContent() {
       </div>
     </div>
 
-    <div className="msg right-msg">
-      <div
-       className="msg-img"
-       style={{backgroundImage: 'url(https://image.flaticon.com/icons/svg/145/145867.svg)'}}
-      ></div>
-
-      <div className="msg-bubble">
-        <div className="msg-info">
-          <div className="msg-info-name">Timothy</div>
-        </div>
-
-        <div className="msg-text">
-          Generate 10 intermediate JS questions
-        </div>
-      </div>
-    </div>
+  
 
     
 
